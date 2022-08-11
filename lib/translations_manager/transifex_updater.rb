@@ -74,7 +74,7 @@ module TranslationsManager
 
     def pull_translations
       puts 'Pulling new translations...', ''
-      command = "tx pull --mode=developer --language=#{@languages.join(',')} --force --parallel"
+      command = "tx pull --languages=#{@languages.join(',')} --force"
 
       execute_tx_command(command)
     end

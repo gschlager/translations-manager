@@ -30,7 +30,7 @@ class TransifexPuller
   end
 
   def pull_files
-    execute_tx_command('tx pull --all --parallel --source')
+    execute_tx_command('tx pull --all --source')
   end
 
   def modify_files
